@@ -1,0 +1,338 @@
+Index: Version 2/.idea/Version 2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Version 2/.idea/Version 2.iml b/Version 2/.idea/Version 2.iml
+new file mode 100644
+--- /dev/null	(date 1682002929824)
++++ b/Version 2/.idea/Version 2.iml	(date 1682002929824)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: .idea/Projet_C.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/Projet_C.iml b/.idea/Projet_C.iml
+new file mode 100644
+--- /dev/null	(date 1679568205031)
++++ b/.idea/Projet_C.iml	(date 1679568205031)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: Version 2/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Version 2/.idea/modules.xml b/Version 2/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1682002907151)
++++ b/Version 2/.idea/modules.xml	(date 1682002907151)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/Version 2.iml" filepath="$PROJECT_DIR$/.idea/Version 2.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: Version 2/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Version 2/.idea/misc.xml b/Version 2/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1682002907259)
++++ b/Version 2/.idea/misc.xml	(date 1682002907259)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
++</project>
+\ No newline at end of file
+Index: menu.c
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/menu.c b/menu.c
+new file mode 100644
+--- /dev/null	(date 1682005626205)
++++ b/menu.c	(date 1682005626205)
+@@ -0,0 +1,147 @@
++//
++// Created by Admin on 20/04/2023.
++//
++
++#include "menu.h"
++#include <stdio.h>
++#include "shape.h"
++
++
++Shape* liste_shape[255];
++int Taille_liste_shape;
++
++int menu(){
++
++    char choix;
++    printf("Veuillez choisir une action :\n");
++    printf("    A- Ajouter une forme \n");
++    printf("    B- Afficher la liste des formes \n");
++    printf("    C- Supprimer une forme \n");
++    printf("    D- Tracer le dessin \n");
++    printf("    E- Aide\n");
++    scanf(" %c",&choix);
++    printf("Votre choix est : %c \n", choix);
++
++    switch (choix) {
++
++        case 'A': {
++            int choix_forme=0;
++            while (choix_forme!=7){
++                printf("Veuillez choisir une action :\n");
++                printf("    1- Ajouter un point\n");
++                printf("    2- Ajouter une ligne\n");
++                printf("    3- Ajouter cercle\n");
++                printf("    4- Ajouter un carre\n");
++                printf("    5- Ajouter un rectangle\n");
++                printf("    6- Ajouter un polygone\n");
++                printf("    7- Revenir au menu precedent\n");
++                scanf(" %d", &choix_forme);
++                printf("Votre choix est : %d\n", choix_forme);
++
++                liste_choix_formes(choix_forme);
++            }
++            printf("Retour au menu\n");
++            menu();
++        }
++        case 'B': {
++            printf("Liste des formes : \n");
++            for(int i=0;i<Taille_liste_shape;i++){
++                print_shape(liste_shape[i]);
++                printf("\n");
++            }
++            menu();
++        }
++        default:
++            printf("Cette lettre n'existe pas\n");
++            menu();
++
++    }
++    return 1;
++}
++
++
++void liste_choix_formes(int choix_forme){
++/* Mettre une condition que le nombre de forme possible n'est pas depasse*/
++    switch (choix_forme) {
++
++        case 1: {int x,y;
++            printf("Votre choix est : %d", choix_forme);
++            printf("Saisir les informations du point :\n");
++            printf("Saisir l'abscisse :\n");
++            scanf(" %d",&x);
++            printf("Saisir l'ordonnée :\n");
++            scanf(" %d",&y);
++            Shape* p= create_point_shape(x,y);
++            liste_shape[Taille_liste_shape++]=p;
++            break;
++        }
++
++        case 2: { int x1,x2, y1,y2;
++            printf("Votre choix est : %d", choix_forme);
++            printf("Saisir les informations de la ligne :\n");
++            printf(">> Saisir le premier point x1 y1 :\n");
++            scanf(" %d, %d", &x1, &y1);
++            printf(">> Saisir le deuxieme point x2 y2 :\n");
++            scanf(" %d, %d", &x2,&y2 );
++            Shape* l= create_line_shape(x1,x2, y1,y2);
++            liste_shape[Taille_liste_shape++]=l;
++            break;
++        }
++        case 3: { int x,y,rayon;
++            printf("Votre choix est : %d", choix_forme);
++            printf("Saisir les informations du cercle :\n");
++            printf("Saisir l'abscisse :\n");
++            scanf(" %d",&x);
++            printf("Saisir l'ordonnée :\n");
++            scanf(" %d",&y);
++            printf("Saisir le rayon :\n");
++            scanf(" %d",&rayon);
++            Shape* c= create_circle_shape(x,y,rayon);
++            liste_shape[Taille_liste_shape++]=c;
++            break;
++        }
++        case 4: {int x, y, length;
++            printf("Votre choix est : %d", choix_forme);
++            printf("Saisir les informations du carre :\n");
++            printf(">> Saisir le point x y :\n");
++            scanf(" %d, %d", &x, &y);
++            printf(">> Saisir la longueur\n");
++            scanf(" %d",&length);
++            Shape* s= create_square_shape(x,y,length);
++            liste_shape[Taille_liste_shape++]=s;
++            break;
++        }
++        case 5: {int x, y, witdh,height;
++            printf("Votre choix est : %d", choix_forme);
++            printf("Saisir les informations du rectangle :\n");
++            printf(">> Saisir le point x y :\n");
++            scanf(" %d %d", &x, &y);
++            printf(">> Saisir la largeur\n");
++            scanf(" %d",&witdh);
++            printf(">> Saisir la hauteur\n");
++            scanf(" %d",&height);
++            Shape* r= create_rectangle_shape(x,y,witdh,height);
++            liste_shape[Taille_liste_shape++]=r;
++            break;
++        }
++        case 6: {int nb_sommets;
++            printf("Votre choix est : %d", choix_forme);
++            printf("Saisir les informations du polygone :\n");
++            printf(">> Saisir le nombre de sommet :\n");
++            scanf(" %d",&nb_sommets);
++            int sommet[nb_sommets];
++            Shape* p=create_polygon_shape(sommet,nb_sommets);
++            liste_shape[Taille_liste_shape++]=p;
++            break;
++        }
++        case 7: {
++
++            break;
++        }
++        default:
++            printf("Ce nombre n'existe pas\n");
++            break;
++
++    }
++}
++
+Index: Version 2/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Version 2/.idea/vcs.xml b/Version 2/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1682002907330)
++++ b/Version 2/.idea/vcs.xml	(date 1682002907330)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: menu.h
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/menu.h b/menu.h
+new file mode 100644
+--- /dev/null	(date 1681996637730)
++++ b/menu.h	(date 1681996637730)
+@@ -0,0 +1,12 @@
++//
++// Created by koco on 20/04/2023.
++//
++
++#ifndef PROJET_C_MENU_H
++#define PROJET_C_MENU_H
++
++int menu();
++void liste_choix_formes(int choix_formes);
++
++
++#endif //PROJET_C_MENU_H
+Index: projet_logiciel_de_dessin/.idea/projet_logiciel_de_dessin.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/projet_logiciel_de_dessin/.idea/projet_logiciel_de_dessin.iml b/projet_logiciel_de_dessin/.idea/projet_logiciel_de_dessin.iml
+new file mode 100644
+--- /dev/null	(date 1682002806375)
++++ b/projet_logiciel_de_dessin/.idea/projet_logiciel_de_dessin.iml	(date 1682002806375)
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module classpath="CMake" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: projet_logiciel_de_dessin/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/projet_logiciel_de_dessin/.idea/.gitignore b/projet_logiciel_de_dessin/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1682002782472)
++++ b/projet_logiciel_de_dessin/.idea/.gitignore	(date 1682002782472)
+@@ -0,0 +1,8 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: projet_logiciel_de_dessin/.idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/projet_logiciel_de_dessin/.idea/modules.xml b/projet_logiciel_de_dessin/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1682002806444)
++++ b/projet_logiciel_de_dessin/.idea/modules.xml	(date 1682002806444)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/projet_logiciel_de_dessin.iml" filepath="$PROJECT_DIR$/.idea/projet_logiciel_de_dessin.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: projet_logiciel_de_dessin/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/projet_logiciel_de_dessin/.idea/vcs.xml b/projet_logiciel_de_dessin/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1682002806554)
++++ b/projet_logiciel_de_dessin/.idea/vcs.xml	(date 1682002806554)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: projet_logiciel_de_dessin/.idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/projet_logiciel_de_dessin/.idea/misc.xml b/projet_logiciel_de_dessin/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1682002782863)
++++ b/projet_logiciel_de_dessin/.idea/misc.xml	(date 1682002782863)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$" />
++</project>
+\ No newline at end of file

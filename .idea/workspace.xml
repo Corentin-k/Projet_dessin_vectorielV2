@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="Projet_C" targetName="Projet_C" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" BUILD_OPTIONS="-j 18" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a810a6a3-56d1-4b3e-b2ca-e9c9a8bddfa6" name="Changes" comment="k" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Projet_C-V2\exportToHTML" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="0cd3581f-06c6-461e-992d-6fe2c352f26f" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0cd3581f-06c6-461e-992d-6fe2c352f26f" />
+        <option name="url" value="https://github.com/Corentin-k/Dessin-vectoriel.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2022" />
+    <option name="minorVersion" value="3.1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2NPaVS0AwT6Vqhg2fFx5kYZ1Wih" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
+    &quot;cf.advertisement.text.overridden&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/koco/OneDrive - Efrei/L1/Informatique/Projet_C&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;ObjectiveC&quot;,
+      &quot;PLAIN_TEXT&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ckerv\OneDrive - Efrei\EFREI\L1\Informatique\Projet_dessin_vectoriel-(C)\Projet_C-V2\Rapport et consigne" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.Projet_C">
+    <configuration name="Projet_C" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Projet_C" TARGET_NAME="Projet_C" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Projet_C" RUN_TARGET_NAME="Projet_C">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CMake.Explicit.Target" predefinedTargetName="Projet_C" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Projet_C" TARGET_NAME="main.c" CONFIG_NAME="main.c">
+      <option name="sourceFile" value="main.c" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="C/C++ File.main.c" />
+      <item itemvalue="CMake Application.Projet_C" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a810a6a3-56d1-4b3e-b2ca-e9c9a8bddfa6" name="Changes" comment="" />
+      <created>1679568194751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679568194751</updated>
+      <workItem from="1679568196626" duration="1807000" />
+      <workItem from="1679570070271" duration="764000" />
+      <workItem from="1679573663284" duration="10950000" />
+      <workItem from="1679592603793" duration="539000" />
+      <workItem from="1679662993636" duration="431000" />
+      <workItem from="1679674723668" duration="2909000" />
+      <workItem from="1679916772724" duration="1011000" />
+      <workItem from="1680176833330" duration="1294000" />
+      <workItem from="1680178186572" duration="134000" />
+      <workItem from="1680178973680" duration="171000" />
+      <workItem from="1680179166621" duration="1027000" />
+      <workItem from="1680502312127" duration="1203000" />
+      <workItem from="1680812749271" duration="1235000" />
+      <workItem from="1680863517525" duration="562000" />
+      <workItem from="1681386559601" duration="15000" />
+      <workItem from="1681386575996" duration="11000" />
+      <workItem from="1681386589169" duration="5449000" />
+      <workItem from="1681465913932" duration="1736000" />
+      <workItem from="1681483724996" duration="1242000" />
+      <workItem from="1681723931256" duration="15000" />
+      <workItem from="1681723948647" duration="1408000" />
+      <workItem from="1681991654845" duration="4736000" />
+      <workItem from="1681999091069" duration="685000" />
+      <workItem from="1682005099831" duration="930000" />
+      <workItem from="1682006065285" duration="762000" />
+      <workItem from="1682014826007" duration="514000" />
+      <workItem from="1682056407953" duration="11677000" />
+      <workItem from="1682103970423" duration="671000" />
+      <workItem from="1682165243295" duration="1333000" />
+      <workItem from="1682168172445" duration="1182000" />
+      <workItem from="1682169630887" duration="1178000" />
+      <workItem from="1682183359148" duration="616000" />
+      <workItem from="1682189043462" duration="2000" />
+      <workItem from="1682264269663" duration="3512000" />
+      <workItem from="1682273263827" duration="2575000" />
+      <workItem from="1682456251654" duration="3730000" />
+      <workItem from="1683615905057" duration="4880000" />
+      <workItem from="1683732334835" duration="3000" />
+      <workItem from="1683798681172" duration="1570000" />
+      <workItem from="1683810328491" duration="779000" />
+      <workItem from="1683813368255" duration="3821000" />
+      <workItem from="1684081502914" duration="2402000" />
+      <workItem from="1684129483767" duration="8295000" />
+      <workItem from="1684159830378" duration="456000" />
+      <workItem from="1684160949609" duration="16895000" />
+      <workItem from="1684215714728" duration="1427000" />
+      <workItem from="1684224405595" duration="3428000" />
+      <workItem from="1684234270176" duration="2197000" />
+      <workItem from="1684242255544" duration="1030000" />
+      <workItem from="1684347616218" duration="4757000" />
+      <workItem from="1684421019724" duration="12048000" />
+      <workItem from="1684438669177" duration="2362000" />
+      <workItem from="1684475510986" duration="11889000" />
+      <workItem from="1684488760004" duration="1323000" />
+      <workItem from="1684492436966" duration="309000" />
+      <workItem from="1684523012290" duration="2395000" />
+      <workItem from="1684754299955" duration="604000" />
+      <workItem from="1684761355569" duration="6466000" />
+      <workItem from="1684828534851" duration="1411000" />
+      <workItem from="1684843181739" duration="3000" />
+      <workItem from="1684843188657" duration="6180000" />
+      <workItem from="1684851243794" duration="4000" />
+      <workItem from="1684861389355" duration="9771000" />
+      <workItem from="1684876075669" duration="138000" />
+      <workItem from="1685024657652" duration="215000" />
+      <workItem from="1685024913596" duration="3266000" />
+      <workItem from="1685033317988" duration="1485000" />
+      <workItem from="1685384097624" duration="63000" />
+      <workItem from="1685386402074" duration="6000" />
+      <workItem from="1690528868604" duration="3791000" />
+      <workItem from="1690968366938" duration="4072000" />
+      <workItem from="1690978663007" duration="5501000" />
+      <workItem from="1690989388029" duration="595000" />
+      <workItem from="1691000906227" duration="3303000" />
+      <workItem from="1691075368245" duration="473000" />
+      <workItem from="1691076593494" duration="28000" />
+      <workItem from="1691076633521" duration="21000" />
+      <workItem from="1691076666483" duration="1154000" />
+      <workItem from="1691077955509" duration="77000" />
+      <workItem from="1691081448975" duration="40000" />
+      <workItem from="1691081541916" duration="21000" />
+      <workItem from="1691082235694" duration="8000" />
+      <workItem from="1691082256026" duration="70000" />
+      <workItem from="1691082345192" duration="7000" />
+      <workItem from="1691082366844" duration="65000" />
+      <workItem from="1691082448578" duration="398000" />
+      <workItem from="1691137832211" duration="1479000" />
+    </task>
+    <task id="LOCAL-00001" summary="k">
+      <created>1682168231162</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682168231162</updated>
+    </task>
+    <task id="LOCAL-00002" summary="k">
+      <created>1682168663050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682168663050</updated>
+    </task>
+    <task id="LOCAL-00003" summary="k">
+      <created>1682168749770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682168749770</updated>
+    </task>
+    <task id="LOCAL-00004" summary="k">
+      <created>1682168812480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682168812480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="k" />
+    <option name="LAST_COMMIT_MESSAGE" value="k" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/area.c</url>
+          <line>68</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

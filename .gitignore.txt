@@ -1,0 +1,4 @@
+cmake-build-debug/
+Projet_dessin_vectoriel/
+Rapport et consigne/
+.idea/
