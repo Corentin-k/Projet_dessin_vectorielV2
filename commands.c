@@ -57,7 +57,7 @@ void free_cmd(Command* cmd) {
  */
 void afficher_formes(Area* area){
     if (area->nb_shape==0){
-        printf("\n>> Il n'y a pas de formes dans la liste \n\n");
+        printf("\n>> Il n'y a pas de forme dans la liste \n\n");
     }else{
         printf("\n>> Liste des formes : \n\n");
         for (int i = 0; i < area->nb_shape; i++) {
@@ -158,7 +158,7 @@ int read_exec_command(Command* cmd,Area* area) {
             }
             s= create_rectangle_shape(cmd->int_params[0],cmd->int_params[1],cmd->int_params[2],cmd->int_params[3],cmd->str_color[0]);
             add_shape_to_area(area,s);
-            printf("good");
+
             draw_area(area);
             break;
         case polygon:
@@ -234,7 +234,8 @@ int read_exec_command(Command* cmd,Area* area) {
                    " - \033[0;32mdelete\033[0m id : supprimer une forme a partir de son identifiant id.\n"
                    " - \033[0;32merase\033[0m : supprimer toutes les formes d'une image.\n"
                    " - \033[0;32mhelp\033[0m : afficher la liste des commandes ainsi qu'un mini mode d'emploi permettant a l'utilisateur\n"
-                   "   d'utiliser les commandes correctement.\n\n");
+                   "   d'utiliser les commandes correctement.\n\n"
+                   " \033[0;34mPS: Vous pouvez rajouter une couleur : red, green, black, yellow, blue ou white apres le nom de la forme pour changer la couleur des formes. La couleur par defaut est le blanc.\033[0m\n\n");
             break;
         case error:
             printf("\033[0;31m>> Commande inconue\n\033[0m");
