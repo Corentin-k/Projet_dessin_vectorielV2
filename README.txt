@@ -1,24 +1,17 @@
-Logiciel de dessin vectoriel
+**MODIFICATION DU PROJET DE COURS DE DESSIN VECTORIEL**
 
-Réalisé par Vénus Bakiko et Corentin KERVAGORET aux deuxieme semestre de L1 à l'EFREI
+- AJOUT DE LA COULEUR 
 
-Projet réalisé dans le cadre du cours de L1 "Algorithme et structure de données " à EFREI
 
-Le projet contient 6 fichier (.c/.h) :
-	-main
-	-commands
-	-area
-	-formes
-	-pixels
-	-id
-	-shapes
-	-(menu)
 
-Pour lancer le jeu, il vous faut disposer d'une interface de langage C (ex: CLION)
-Et exécuter le fichier main.py.
+Pour utiliser le jeu, ouvrez le terminal de Windows.
 
-Ou lancer le fichier exécutable "Projet_c" situé dans le fichier "cmake-build-debug"
+Si celui-ci n'est pas activé lorsque vous lancez le jeu :
 
-Une fois ouvert, appuyez sur le bouton play (triangle vert) en haut à droite (sur CLION)
+Faites un clic droit dans la fenêtre de jeu, puis allez dans Propriétés, ensuite dans Terminal, et enfin dans
 
-Enfin, suivez les consignes dans la console.
+Application terminal par défaut, sélectionnez -> Windows Terminal
+
+Ensuite, relancez le jeu.
+
+Sinon, allez dans les paramètres de l'ordinateur, cherchez "terminal" et dans Terminal, sélectionnez -> Windows Terminal.
